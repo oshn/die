@@ -1,0 +1,42 @@
+{
+  "name": "spb25-die",
+  "version": "1.0.0",
+  "description": "Loaded die simulator",
+  "main": "lib/die.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "ava",
+    "pretest": "npm run compile",
+    "compile": "babel src -sd lib",
+    "prepublish": "npm test"
+  },
+  "author": "Che Oshn",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spb25/die.git"
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "babel-cli": "^6.18.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-env": "^1.1.4"
+  },
+  "bugs": {
+    "url": "https://github.com/spb25/die/issues"
+  },
+  "homepage": "https://github.com/spb25/die#readme",
+  "keywords": [
+    "loaded",
+    "die",
+    "chance",
+    "random",
+    "spb25"
+  ],
+  "dependencies": {
+    "spb25-coin": "^1.0.0",
+    "spb25-device": "^1.1.0"
+  }
+}
